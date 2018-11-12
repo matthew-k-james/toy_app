@@ -28,7 +28,7 @@ Steps to run the application on localhost
   1.Pull the app from the GitHub repository at https://github.com/matthew-k-james/toy_app
   2.Open the command line and navigate to the toy_app folder
   3. run 'bundle install'
-  4. run 'bundle exec rake db:migrate'
+  4. If you have set up any data model components run 'bundle exec rake db:migrate'
   5. run 'rails server'
   6. go to 'http://localhost:3000/' and the app should be running
 
@@ -39,6 +39,7 @@ Heroku
 4. Shut down and re-open your command line and re-run command 2 to check it's worked correctly.
 5. Use the 'heroku login' command and enter your credentials
 6. Link your cloned repo and heroku using command 'heroku git:remote -a mysterious-brushlands-79943'
-7. heroku run rake db:migrate
-6. Then push your code to heroku using 'git push heroku master'
+7. Then push your code to heroku using 'git push heroku master' after you have pushed your code to your git master.
+8. Log in to heroku and open up the app at
   https://mysterious-brushlands-79943.herokuapp.com
+8.  To pass the data model to heroku use command 'heroku run rake db:migrate' after you have pushed the code.
